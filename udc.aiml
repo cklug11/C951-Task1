@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>*</pattern>
+    <template>Hello There! Please type "Start" to begin .</template>
+  </category>
+  <category>
+    <pattern>Start</pattern>
+    <template>
+    Are you looking for career advice? 
+    
+   <button>
+        <text>Yes!</text>
+        <postback>Cyes</postback>
+    </button>
+    <button>
+        <text>No</text>
+        <postback>Cno</postback>
+    </button>
+    </template>
+  </category>
+  
+  <category>
+      <pattern>Cyes</pattern>
+      <template>
+      Okay! What is your current major?
+      <button>
+        <text>Computer Science Major</text>
+        <postback>Ccs</postback>
+    </button>
+    <button>
+        <text>Non-Computer Science Major</text>
+        <postback>Cncs</postback>
+    </button>
+      </template>
+  </category>
+  
+   <category>
+      <pattern>Cncs</pattern>
+      <template>
+      Unfortunately, this chat bot can only give computer science career advice.
+      Please exit the chat bot.
+      </template>
+  </category>
+  
+  <category>
+      <pattern>Cno</pattern>
+      <template>Whoops! Seems like you are not in the right place. 
+      Please exit the chat bot. Have a good day!</template>
+  </category>
+</aiml>
+
+

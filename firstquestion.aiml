@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+      <pattern>Ccs</pattern>
+      <template>Great! Would you consider yourself more analytical or creative?
+      <button>
+          <text>Analytical</text>
+          <postback>Canalytical</postback>
+      </button>
+      <button>
+          <text>Creative</text>
+          <postback>Ccreative</postback>
+      </button>
+      </template>
+  </category>
+  
+</aiml>

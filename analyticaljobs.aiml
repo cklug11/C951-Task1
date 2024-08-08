@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	  <category>
+      <pattern>Canalytical</pattern>
+      <template>
+          Would you rather focus on databases or cybersecurity?
+          <button>
+              <text>Databases</text>
+              <postback>Cdata</postback>
+          </button>
+          <button>
+              <text>Cybersecurity</text>
+              <postback>Ccyber</postback>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Cdata</pattern>
+      <template>
+          You would excel as a Database Administrator!
+          <button>
+              <text>Click here to learn more!</text>
+              <url>https://www.bls.gov/ooh/computer-and-information-technology/database-administrators.htm#tab-1</url>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Ccyber</pattern>
+      <template>
+       Would you rather prevent security breaches or gather evidence of a crime?
+      <button>
+          <text>Prevent Security breaches</text>
+          <postback>Cprevent</postback>
+      </button>
+      <button>
+          <text>Gather Evidence of a Crime</text>
+          <postback>Ccrime</postback>
+      </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Cprevent</pattern>
+      <template>
+          You would excel as an Information Security Analyst!
+          <button>
+              <text>Click here to learn more!</text>
+              <url>https://www.bls.gov/ooh/computer-and-information-technology/information-security-analysts.htm#tab-2</url>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Ccrime</pattern>
+      <template>
+          You would excel as a Computer Forensic Professional!
+          <button>
+              <text>Click here to learn more!</text>
+              <url>https://www.liveabout.com/computer-forensics-2071352</url>
+          </button>
+      </template>
+  </category>
+</aiml>

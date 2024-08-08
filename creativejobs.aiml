@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+      <pattern>Ccreative</pattern>
+      <template>
+       Do you enjoy coding or designing more?
+      <button>
+          <text>Coding</text>
+          <postback>Ccode</postback>
+      </button>
+      <button>
+          <text>Designing</text>
+          <postback>Cdesign</postback>
+      </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Ccode</pattern>
+      <template>
+          You would excel as a Front End Developer!
+          <button>
+              <text>Click here to learn more!</text>
+              <url>https://www.coursera.org/articles/front-end-developer</url>
+          </button>
+      </template>
+  </category>
+  <category>
+      <pattern>Cdesign</pattern>
+      <template>
+          You would excel as an UI Designer!
+          <button>
+              <text>Click here to learn more!</text>
+              <url>https://www.animationcoursesahmedabad.com/blog/ahmedabad/graphic-web-ui-ux-multimedia-design/how-to-start-career-as-a-ui-ux-designer-with-computer-science-degree/436/details</url>
+          </button>
+      </template>
+  </category>
+  
+</aiml>
